@@ -1,6 +1,6 @@
 obdata = bpy.context.object.data
 
-out = '{'
+out = '"{'
 out += '"vertices":{'
 for v in obdata.vertices:
     if v.index < len(obdata.vertices)-1:
@@ -16,5 +16,5 @@ for e in obdata.edges:
         out += ('"{}":[{},{}]'.format(e.index, e.vertices[0], e.vertices[1]))
         out+= '}'
         
-out += '}'
+out += '}"'
 print(out,end="")
