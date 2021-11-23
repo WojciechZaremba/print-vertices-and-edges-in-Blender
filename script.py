@@ -1,4 +1,8 @@
+import os
+
 obdata = bpy.context.object.data
+path = "C:/Users/USER/Documents/FOLDER"
+os.makedirs(path, exist_ok=True)
 
 out = '{'
 out += '"vertices":{'
@@ -18,3 +22,6 @@ for e in obdata.edges:
         
 out += '}'
 print(out,end="")
+
+with open(path + "FILENAME.json", "w") as file:
+    file.write(out)
