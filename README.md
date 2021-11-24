@@ -9,4 +9,4 @@
 ## 2 Edit FILENAME.json and write your filename there
 ## 4 Run this script in the console
 ## 5 A JSON object has been printed in the console
-## 5.1 A JSNON file has been saved in your directory
+## 5.1 A JSON file has been saved in your directory
